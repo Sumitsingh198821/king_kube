@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: resorce
+  name: resorce
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: resorce
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: resorce
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: 
+          requests:
+              memory: 200Mi
+              cpu: 200m
+          limits:
+              memory: 400Mi
+              cpu: 400m
+

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: demo
+  name: demo
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: demo
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: demo
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+      tolerations:      
+      - key: key1
+        operator: Equal
+        value: value1
+        effect: NoSchedule
+      nodeSelector:
+              role: db  
+

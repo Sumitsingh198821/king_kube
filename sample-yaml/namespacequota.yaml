@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: namespacequota
+  name: namespacequota
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: namespacequota
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: namespacequota
+    spec:
+      containers:
+      - image: nhinx
+        name: nhinx
+        resources:
+          requests:       
+            memory: 200Mi
+            cpu:   200m    

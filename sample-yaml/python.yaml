@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: demo4
+  name: demo4
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: demo4
+    spec:
+      containers:
+      - image: docker.io/library/python
+        name: pythoni
+        
+       resources:
+          requests:
+             memory: "100Mi"
+          limits:
+             memory: "200Mi"
+       command: ["stress"]
+       args: ["--vm", "1", "--vm-bytes", "150M", "--vm-hang", "1"]

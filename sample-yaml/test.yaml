@@ -1,0 +1,66 @@
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;44r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[44;1H"/tmp/kubectl-edit-1799953037.yaml" 66L, 1770C[1;1H# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2022-11-24T16:54:26Z"
+  generation: 1
+  labels:
+    app: test
+  name: test
+  namespace: default
+  resourceVersion: "1879001"
+  uid: d5d3ef61-4eae-45c8-b14b-c8e0dfa26b11
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:[24;7Happ: test
+  strategy:
+    rollingUpdate:[27;7HmaxSurge: 25%[28;7HmaxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:[32;7HcreationTimestamp: null[33;7Hlabels:[34;9Happ: test
+    spec:[36;7Hcontainers:[37;7H- image: nginx[38;9HimagePullPolicy: Always[39;9Hname: nginx[40;9Hresources: {}[41;9HterminationMessagePath: /dev/termination-log[42;9HterminationMessagePolicy: File[43;7HdnsPolicy: ClusterFirst[1;1H[?25h[?25l[44;1HType  :qa!  and press <Enter> to abandon all changes and exit Vim[1;1H[?25h
+
+
+
+
+
+[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[44;1H
+[?2004l[?1l>[?1049l[23;0;0t[?2004l[?2004h[?1049h[22;0;0t[?1h=[?2004h[?12h[?12l[27m[23m[29m[m[H[2J[?25l[1;1H# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2022-11-24T16:54:26Z"
+  generation: 1
+  labels:
+    app: test
+  name: test
+  namespace: default
+  resourceVersion: "1879001"
+  uid: d5d3ef61-4eae-45c8-b14b-c8e0dfa26b11
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:[24;7Happ: test
+  strategy:
+    rollingUpdate:[27;7HmaxSurge: 25%[28;7HmaxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:[32;7HcreationTimestamp: null[33;7Hlabels:[34;9Happ: test
+    spec:[36;7Hcontainers:[37;7H- image: nginx[38;9HimagePullPolicy: Always[39;9Hname: nginx[40;9Hresources: {}[41;9HterminationMessagePath: /dev/termination-log[42;9HterminationMessagePolicy: File[43;7HdnsPolicy: ClusterFirst[7;1H[?25h[44;1H[?2004l[?1l>[?1049l[23;0;0tVim: Caught deadly signal HUP
+Vim: Finished.
+[44;1H
